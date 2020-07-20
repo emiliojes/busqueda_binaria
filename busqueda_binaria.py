@@ -1,6 +1,8 @@
 import random
 
 def busqueda_binaria(lista, comienzo, final, objetivo):
+    #siempre que accesamos en indices tenemos que restar 1, evitar el off by 1
+    print(f'buscando {objetivo} entre {lista[comienzo]} y {lista[final -1]}')
     if comienzo > final:
         return False
     
